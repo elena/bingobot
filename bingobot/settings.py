@@ -30,6 +30,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
 
     'south',
+    'scores',
 )
 
 MIDDLEWARE_CLASSES = (
