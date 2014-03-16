@@ -64,6 +64,10 @@ STATIC_URL = '/static/'
 
 SITE_ID = 1
 
+TEMPLATE_DIRS = {
+    os.path.join(BASE_DIR, 'templates'),
+}
+
 
 
 ## HEROKU settings
