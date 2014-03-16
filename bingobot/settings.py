@@ -28,6 +28,8 @@ INSTALLED_APPS = (
 
     'django.contrib.flatpages',
     'django.contrib.sites',
+
+    'south',
 )
 
 MIDDLEWARE_CLASSES = (
