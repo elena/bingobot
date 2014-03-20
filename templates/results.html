@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <h2>Results: {{ event.name }}</h2>
+
+<h3>Bodies</h3>
+{% for person in body_list %}
+<div>{{ person.person.name }}: {{ person.value }}</div>
+{% endfor %}
+
+<h3>Boobies</h3>
+{% for person in boob_list %}
+<div>{{ person.person.name }}: {{ person.value }}</div>
+{% endfor %}
+
+  
+{% endblock %}
