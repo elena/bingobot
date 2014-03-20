@@ -1,0 +1,84 @@
+body {
+    background: url('../bg.jpg') no-repeat 0 0 ;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 65px;
+    color: white;
+}
+
+div, p, a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    color: white;
+}
+li {list-style: none;}
+label {display: none;}
+
+input {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 65px;
+    color: black;
+    position: absolute;
+}
+
+input[type="submit"]{
+    background: url(../submit.jpg) no-repeat;
+    width: 1220px;
+    left: 157px;
+    height: 345px;
+    position: absolute;
+    top: 1369px;
+    border: 0;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    border: 5px solid black;
+    height: 81px;
+}
+
+#id_name {
+    width: 1103px;
+    top: 167px;
+    left: 57px;
+}
+#id_bodies{
+    top: 421px;
+    left: 49px;
+    width: 488px;
+}
+#id_boobs{
+    top: 421px;
+    left: 54px;
+    width: 488px;
+}
+
+body > form:nth-child(1) > ul:nth-child(2) > li:nth-child(1) {
+    position: absolute;
+    background: url(../name.jpg) no-repeat;
+    width: 1228px;
+    height: 295px;
+    top: 495px;
+    left: 159px;    
+}
+
+body > form:nth-child(1) > ul:nth-child(2) > li:nth-child(2) {
+    position: absolute;
+    background: url(../body.jpg) no-repeat;
+    width: 600px;
+    height: 595px;
+    top: 806px;
+    left: 160px;
+}
+
+body > form:nth-child(1) > ul:nth-child(2) > li:nth-child(3) {
+    position: absolute;
+    background: url(../booby.jpg) no-repeat;
+    width: 600px;
+    height: 595px;
+    top: 807px;
+    left: 781px;
+}
+
+                                                         
