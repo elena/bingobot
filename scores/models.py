@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.html import urlize
 
 
 POLL_CHOICES = (
@@ -11,9 +12,16 @@ class Event(models.Model):
     date = None
     current = models.BooleanField(default=False)
     name = models.CharField(max_length=256)
-
+    slug = models.SlugField(max_length=256)
+    
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = urlize(self.name)
+        super(Event, self).save(*args, **kwargs)
+
 
 
 class EventPoll(models.Model):
