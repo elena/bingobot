@@ -30,3 +30,14 @@ class PollFormView(generic.edit.FormView):
             poll_boob.save()
 
         return super(PollFormView, self).form_valid(form)
+
+
+class EventDetailView(generic.DetailView):
+    model = Event
+    template_name = 'results.html'
+    
+    def get_context_data(self, **kwargs):
+        context = super(EventDetailView, self).get_context_data(**kwargs)
+        context['body_list'] = self.get_object().poll_set.filter(poll='body')
+        context['boob_list'] = self.get_object().poll_set.filter(poll='boob')
+        return context
