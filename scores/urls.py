@@ -9,4 +9,8 @@ urlpatterns = patterns('',
 
     url(r'^success$', generic.TemplateView.as_view(template_name="success.html"),
                       name='person_poll_success'),
+
+    url(r'^results/(?P<slug>[\w-]+)$', views.EventDetailView.as_view(),
+                           name='event_detail_view'),
+
 )
