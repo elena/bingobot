@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+<style>
+body {background: url('{{STATIC_URL}}bg.png') no-repeat 0 0;}
+</style>
+{% endblock %}
 
 {% block content %}
 
@@ -10,7 +15,7 @@
       {{ form.as_ul }}
     </ul>
 
-    <input type="submit"  value="Submit" />
+    <input type="submit"  value=" " />
 
   </form>
 
