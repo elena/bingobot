@@ -46,6 +46,9 @@ class Poll(models.Model):
     value = models.IntegerField()
     ranking = models.IntegerField(blank=True, null=True)
 
+    class Meta:
+        ordering = ['ranking']
+    
     def __str__(self):
         return "[{0}] {1} -- {2}: {3}".format(self.event, self.person,
                                               self.poll, self.value)
